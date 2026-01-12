@@ -1,55 +1,40 @@
 <!DOCTYPE html>
 <html lang="kk">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Ғарыш саяхаты - Портфолио</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ғарыш саяхаты — Портфолио</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="stars parallax"></div>
+  <div class="stars" id="stars"></div>
 
-    <header>
-        <h1>Ғарыш саяхаты</h1>
-        <p>Менің веб-жобаларым</p>
-    </header>
+  <header>
+    <h1>🚀 Ғарыш саяхаты портфолио</h1>
+  </header>
 
-    <main>
-        <!-- Шексіз карусель -->
-        <section class="carousel-section">
-            <h2>Планеталар</h2>
-            <div class="carousel">
-                <div class="carousel-inner" id="carouselInner">
-                    <div class="planet" data-project="1">Меркурий</div>
-                    <div class="planet" data-project="2">Венера</div>
-                    <div class="planet" data-project="3">Жер</div>
-                    <div class="planet" data-project="4">Марс</div>
-                    <div class="planet" data-project="5">Юпитер</div>
-                </div>
-            </div>
-            <div id="projectDescription" class="project-description"></div>
-        </section>
+  <main>
+    <section>
+      <h2>Планеталар</h2>
+      <div class="carousel" id="carousel"></div>
+    </section>
 
-        <!-- Фильтр -->
-        <section class="filters-section">
-            <h2>Жобаларды сүзгілеу</h2>
-            <div class="filters">
-                <button data-category="all">Барлығы</button>
-                <button data-category="frontend">Фронтенд</button>
-                <button data-category="design">Дизайн</button>
-                <button data-category="games">Ойындар</button>
-            </div>
+    <section>
+      <h2>Жобалар</h2>
+      <div class="filters">
+        <button data-cat="all">Барлығы</button>
+        <button data-cat="frontend">Фронтенд</button>
+        <button data-cat="design">Дизайн</button>
+        <button data-cat="games">Ойындар</button>
+      </div>
+      <div class="projects" id="projects"></div>
+    </section>
+  </main>
 
-            <div class="project-cards">
-                <div class="card" data-category="frontend">To-Do List App</div>
-                <div class="card" data-category="design">Landing Page 2025</div>
-                <div class="card" data-category="games">Space Shooter</div>
-                <div class="card" data-category="frontend">Weather Widget</div>
-                <div class="card" data-category="games">8-bit Quiz</div>
-            </div>
-        </section>
-    </main>
+  <footer>
+    © 2026 Портфолио MVP
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
